@@ -1,9 +1,7 @@
 // write a datadog transport for winston
 import { tracer } from '../lib/trace';
-import winston from 'winston';
 import Transport from 'winston-transport';
 import { client, v2 } from '@datadog/datadog-api-client';
-import { meta } from '../routes/_index';
 
 // DO NOT INSTANTIATE THE LOGGER HERE, IT WILL CAUSE A CIRCULAR DEPENDENCY
 
